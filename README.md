@@ -1,8 +1,10 @@
+This is Frontseat’s fork of [charmbracelet/ssh v0.4.3](https://github.com/charmbracelet/ssh/tree/v0.4.3). It fixes reverse-forwarded listener ownership when a cancelled port is immediately reused. Cleanup closes its captured listener and removes only its own registry entry. The upstream license and history are retained.
+
 # ssh
 
 <p>
     <a href="https://github.com/charmbracelet/ssh/releases"><img src="https://img.shields.io/github/release/charmbracelet/ssh.svg" alt="Latest Release"></a>
-    <a href="https://pkg.go.dev/charm.land/ssh?tab=doc"><img src="https://godoc.org/github.com/golang/gddo?status.svg" alt="GoDoc"></a>
+    <a href="https://pkg.go.dev/github.com/frontseat-dev/ssh?tab=doc"><img src="https://godoc.org/github.com/golang/gddo?status.svg" alt="GoDoc"></a>
     <a href="https://github.com/charmbracelet/ssh/actions"><img src="https://github.com/charmbracelet/ssh/actions/workflows/build.yml/badge.svg" alt="Build Status"></a>
     <a href="https://codecov.io/gh/charmbracelet/ssh"><img alt="Codecov branch" src="https://img.shields.io/codecov/c/github/charmbracelet/ssh/master.svg"></a>
 </p>
@@ -18,7 +20,7 @@ import (
 	"io"
 	"log"
 
-	"charm.land/ssh"
+	"github.com/frontseat-dev/ssh"
 )
 
 func main() {
@@ -45,7 +47,7 @@ A bunch of great examples are in the [`_examples`](_examples) directory.
 
 ## Usage
 
-[See the GoDoc reference.](https://pkg.go.dev/charm.land/ssh)
+[See the GoDoc reference.](https://pkg.go.dev/github.com/frontseat-dev/ssh)
 
 ## Feedback
 

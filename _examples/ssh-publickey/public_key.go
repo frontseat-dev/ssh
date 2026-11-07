@@ -5,7 +5,7 @@ import (
 	"io"
 	"log"
 
-	"charm.land/ssh"
+	"github.com/frontseat-dev/ssh"
 	gossh "golang.org/x/crypto/ssh"
 )
 

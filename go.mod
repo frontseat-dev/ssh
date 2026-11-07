@@ -1,4 +1,4 @@
-module charm.land/ssh
+module github.com/frontseat-dev/ssh
 
 go 1.25.0
 

@@ -4,7 +4,7 @@ import (
 	"io"
 	"os"
 
-	"charm.land/ssh"
+	"github.com/frontseat-dev/ssh"
 )
 
 func ExampleListenAndServe() {

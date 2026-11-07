@@ -9,7 +9,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	"charm.land/ssh"
+	"github.com/frontseat-dev/ssh"
 	"github.com/creack/pty"
 )
 
