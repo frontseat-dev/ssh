@@ -131,12 +131,7 @@ func (h *ForwardedTCPHandler) HandleSSHRequest(ctx Context, srv *Server, req *go
 		h.Unlock()
 		go func() {
 			<-ctx.Done()
-			h.Lock()
-			ln, ok := h.forwards[addr]
-			h.Unlock()
-			if ok {
-				_ = ln.Close()
-			}
+			_ = ln.Close()
 		}()
 		go func() {
 			for {
@@ -179,7 +174,9 @@ func (h *ForwardedTCPHandler) HandleSSHRequest(ctx Context, srv *Server, req *go
 				}()
 			}
 			h.Lock()
-			delete(h.forwards, addr)
+			if h.forwards[addr] == ln {
+				delete(h.forwards, addr)
+			}
 			h.Unlock()
 		}()
 		return true, gossh.Marshal(&remoteForwardSuccess{uint32(destPort)})

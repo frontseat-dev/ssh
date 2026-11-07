@@ -5,7 +5,7 @@ import (
 	"io"
 	"log"
 
-	"charm.land/ssh"
+	"github.com/frontseat-dev/ssh"
 	"github.com/pkg/sftp"
 )
 

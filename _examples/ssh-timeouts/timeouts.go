@@ -4,7 +4,7 @@ import (
 	"log"
 	"time"
 
-	"charm.land/ssh"
+	"github.com/frontseat-dev/ssh"
 )
 
 var (

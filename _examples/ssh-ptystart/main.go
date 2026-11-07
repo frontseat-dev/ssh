@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"time"
 
-	"charm.land/ssh"
+	"github.com/frontseat-dev/ssh"
 )
 
 func main() {
